@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "simplecoin",
+	"version": "${version}",
+	"name": "Simple Coin",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/simplecoin/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"allef.simplecoin.SimpleCoin"
+		],
+		"fabric-datagen": [
+			"allef.simplecoin.SimplecoinDataGenerator"
+		],
+      "client": [
+        "allef.simplecoin.SimpleCoinClient"
+      ]
+	},
+	"mixins": [
+		"simplecoin.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
