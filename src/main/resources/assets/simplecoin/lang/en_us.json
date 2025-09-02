@@ -1,4 +1,10 @@
 {
   "item.simplecoin.gold_coin": "Gold Coin",
-  "item.simplecoin.copper_coin": "Copper Coin"
+  "item.simplecoin.copper_coin": "Copper Coin",
+  "item.simplecoin.diamond_coin": "Diamond Coin",
+  "item.simplecoin.emerald_coin": "Emerald Coin",
+  "item.simplecoin.iron_coin": "Iron Coin",
+  "item.simplecoin.netherite_coin": "Netherite Coin",
+  "item.simplecoin.continental_coin": "Continental Coin",
+  "item.simplecoin.galactic_credit": "Galactic Credit"
 }

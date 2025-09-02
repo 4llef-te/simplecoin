@@ -21,9 +21,9 @@
 		"fabric-datagen": [
 			"allef.simplecoin.SimplecoinDataGenerator"
 		],
-      "client": [
-        "allef.simplecoin.SimpleCoinClient"
-      ]
+        "client": [
+          "allef.simplecoin.SimpleCoinClient"
+        ]
 	},
 	"mixins": [
 		"simplecoin.mixins.json"

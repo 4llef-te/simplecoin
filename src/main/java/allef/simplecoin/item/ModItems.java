@@ -17,6 +17,12 @@ public class ModItems {
 
     public static final Item GOLD_COIN = register("gold_coin", Item::new, new Item.Settings());
     public static final Item COPPER_COIN = register("copper_coin", Item::new, new Item.Settings());
+    public static final Item DIAMOND_COIN = register("diamond_coin", Item::new, new Item.Settings());
+    public static final Item EMERALD_COIN = register("emerald_coin", Item::new, new Item.Settings());
+    public static final Item IRON_COIN = register("iron_coin", Item::new, new Item.Settings());
+    public static final Item NETHERITE_COIN = register("netherite_coin", Item::new, new Item.Settings());
+    public static final Item CONTINENTAL_COIN = register("continental_coin", Item::new, new Item.Settings());
+    public static final Item GALACTIC_CREDIT = register("galactic_credit", Item::new, new Item.Settings());
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
 
@@ -33,11 +39,18 @@ public class ModItems {
 
     public static void registerModItems() {
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.GOLD_COIN));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.COPPER_COIN));;
+
 
     }
 
     public static void initialize() {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.GOLD_COIN));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.COPPER_COIN));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.DIAMOND_COIN));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.EMERALD_COIN));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.IRON_COIN));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.NETHERITE_COIN));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.CONTINENTAL_COIN));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.GALACTIC_CREDIT));
     }
 }
