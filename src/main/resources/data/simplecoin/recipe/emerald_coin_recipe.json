@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "121",
+    " 1 "
+  ],
+  "key": {
+    "1": "minecraft:emerald",
+
+    "2": "minecraft:emerald_block"
+
+  },
+  "result": {
+    "id": "simplecoin:emerald_coin",
+    "count": 1
+  }
+}

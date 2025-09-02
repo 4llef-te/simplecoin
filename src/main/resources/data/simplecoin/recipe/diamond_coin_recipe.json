@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "121",
+    " 1 "
+  ],
+  "key": {
+    "1": "minecraft:diamond",
+
+    "2": "minecraft:diamond_block"
+
+  },
+  "result": {
+    "id": "simplecoin:diamond_coin",
+    "count": 1
+  }
+}

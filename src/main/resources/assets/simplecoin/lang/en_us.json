@@ -6,5 +6,7 @@
   "item.simplecoin.iron_coin": "Iron Coin",
   "item.simplecoin.netherite_coin": "Netherite Coin",
   "item.simplecoin.continental_coin": "Continental Coin",
-  "item.simplecoin.galactic_credit": "Galactic Credit"
+  "item.simplecoin.galactic_credit": "Galactic Credit",
+
+  "itemGroup.simple_coin": "Simple Coin"
 }
