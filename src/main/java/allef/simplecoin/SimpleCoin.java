@@ -13,7 +13,7 @@ public class SimpleCoin implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModItems.registerModItems();
+        ModItems.initialize();
         LOGGER.info("SimpleCoin mod initialized!");
     }
 }

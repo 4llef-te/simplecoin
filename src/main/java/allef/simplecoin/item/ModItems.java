@@ -15,8 +15,11 @@ import java.util.function.Function;
 public class ModItems {
 
 
+    public static final Item GOLD_COIN = register("gold_coin", Item::new, new Item.Settings());
+    public static final Item COPPER_COIN = register("copper_coin", Item::new, new Item.Settings());
+
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
-        // Create the item key.
+
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SimpleCoin.MOD_ID, name));
 
         // Create the item instance.
@@ -28,10 +31,6 @@ public class ModItems {
         return item;
     }
 
-    public static final Item GOLD_COIN = register("gold_coin", Item::new, new Item.Settings());
-    public static final Item COPPER_COIN = register("copper_coin", Item::new, new Item.Settings());
-
-
     public static void registerModItems() {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.GOLD_COIN));
@@ -39,4 +38,6 @@ public class ModItems {
 
     }
 
+    public static void initialize() {
+    }
 }
