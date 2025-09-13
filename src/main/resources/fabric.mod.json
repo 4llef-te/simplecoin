@@ -3,9 +3,9 @@
 	"id": "simplecoin",
 	"version": "${version}",
 	"name": "Simple Coin",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This is simple item based economy mod for smp's and modpacks",
 	"authors": [
-		"Me!"
+		"4llef"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
