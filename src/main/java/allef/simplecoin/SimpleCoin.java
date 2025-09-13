@@ -4,9 +4,11 @@ import allef.simplecoin.commands.BalanceCommand;
 import allef.simplecoin.commands.DepositCommand;
 import allef.simplecoin.commands.TransferCommand;
 import allef.simplecoin.commands.WithdrawCommand;
+import allef.simplecoin.data.BankingData;
 import allef.simplecoin.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,6 +24,9 @@ public class SimpleCoin implements ModInitializer {
         BalanceCommand.register();
         WithdrawCommand.register();
         TransferCommand.register();
+
+        // Initialize banking data
+        ServerLifecycleEvents.SERVER_STARTED.register(BankingData::init);
         LOGGER.info("SimpleCoin mod initialized!");
     }
 }
