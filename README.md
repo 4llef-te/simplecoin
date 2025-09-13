@@ -26,4 +26,4 @@ SimpleCoin is a light, item-based currency mod for SMPs and modpacks, with banki
 
 ## License
 
-MIT License
+MIT License © 2025 Amir Torabi
