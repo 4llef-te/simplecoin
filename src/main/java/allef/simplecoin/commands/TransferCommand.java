@@ -29,6 +29,7 @@ public class  TransferCommand {
 
     public static void register() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> dispatcher.register(CommandManager.literal("transfer")
+                .requires(source -> source.hasPermissionLevel(0))
                 .then(CommandManager.argument("target", StringArgumentType.word())
                         .suggests(TransferCommand::suggestPlayers)
                         .then(CommandManager.argument("coin", StringArgumentType.word())
