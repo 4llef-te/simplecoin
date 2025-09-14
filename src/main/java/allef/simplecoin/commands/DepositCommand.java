@@ -152,8 +152,8 @@ public class DepositCommand {
             case "emerald" -> ModItems.EMERALD_COIN;
             case "iron" -> ModItems.IRON_COIN;
             case "netherite" -> ModItems.NETHERITE_COIN;
-            case "continental" -> ModItems.CONTINENTAL_COIN;
-            case "credit" -> ModItems.GALACTIC_CREDIT;
+            case "continental" -> ModItems.GOLDEN_BLOOD_COIN;
+            case "credit" -> ModItems.CREDIT;
             default -> null;
         };
     }

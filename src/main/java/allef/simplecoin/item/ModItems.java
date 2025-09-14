@@ -24,8 +24,8 @@ public class ModItems {
     public static final Item EMERALD_COIN = register("emerald_coin", Item::new, new Item.Settings());
     public static final Item IRON_COIN = register("iron_coin", Item::new, new Item.Settings());
     public static final Item NETHERITE_COIN = register("netherite_coin", Item::new, new Item.Settings());
-    public static final Item CONTINENTAL_COIN = register("continental_coin", Item::new, new Item.Settings());
-    public static final Item GALACTIC_CREDIT = register("galactic_credit", Item::new, new Item.Settings());
+    public static final Item GOLDEN_BLOOD_COIN = register("golden_blood_coin", Item::new, new Item.Settings());
+    public static final Item CREDIT = register("credit", Item::new, new Item.Settings());
 
     public static final RegistryKey<ItemGroup> SIMPLE_COIN = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(SimpleCoin.MOD_ID, "simple_coin"));
 
@@ -48,14 +48,14 @@ public class ModItems {
     public static void initialize() {
         Registry.register(Registries.ITEM_GROUP, SIMPLE_COIN, CUSTOM_ITEM_GROUP);
         ItemGroupEvents.modifyEntriesEvent(SIMPLE_COIN).register(itemGroup -> {
-            itemGroup.add(ModItems.GOLD_COIN);
-            itemGroup.add(ModItems.COPPER_COIN);
-            itemGroup.add(ModItems.DIAMOND_COIN);
-            itemGroup.add(ModItems.EMERALD_COIN);
             itemGroup.add(ModItems.IRON_COIN);
+            itemGroup.add(ModItems.COPPER_COIN);
+            itemGroup.add(ModItems.GOLD_COIN);
+            itemGroup.add(ModItems.EMERALD_COIN);
+            itemGroup.add(ModItems.DIAMOND_COIN);
             itemGroup.add(ModItems.NETHERITE_COIN);
-            itemGroup.add(ModItems.CONTINENTAL_COIN);
-            itemGroup.add(ModItems.GALACTIC_CREDIT);
+            itemGroup.add(ModItems.GOLDEN_BLOOD_COIN);
+            itemGroup.add(ModItems.CREDIT);
 
         });
     }

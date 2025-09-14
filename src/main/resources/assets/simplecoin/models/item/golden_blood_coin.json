@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "simplecoin:item/galactic_credit"
+    "layer0": "simplecoin:item/golden_blood_coin"
   }
 }

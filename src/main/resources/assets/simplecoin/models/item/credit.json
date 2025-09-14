@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "simplecoin:item/continental_coin"
+    "layer0": "simplecoin:item/credit"
   }
 }
